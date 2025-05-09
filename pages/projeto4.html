@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto App para DA FATEC jd </title>
+    <link rel="stylesheet" href="projetos.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="topo">
+        <img src="../imagens/logo-DA.png" alt="Logo DA">
+    </div>
+    
+
+    <div class="screenshots">
+        <img src="../imagens/d1.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d2.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d3.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d4.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d5.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d6.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d7.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d8.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d9.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d10.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d11.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d12.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d13.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d14.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d15.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d16.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d17.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d18.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d19.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d20.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d21.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d22.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d23.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d24.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d25.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d26.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d27.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d29.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d30.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d31.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d32.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d33.jpeg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/d34.jpeg" alt="" onclick="expandImage(this)">
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
+    
+    <div class="conteudo">
+
+        <div class="descricaoD">
+            <h3>App D.A FATEC Jundiaí</h3>
+            <p>
+                Atuei no desenvolvimento da interface de um aplicativo para o Diretório Acadêmico (DA) DA Fatec Jundiaí, com foco em facilitar a comunicação institucional e a participação dos alunos. Participei da prototipação de todas as telas no Figma e contribuí com o desenvolvimento front-end em React Native, focando na usabilidade e na identidade visual do app.
+                A aplicação simula uma rede social acadêmica, permitindo o compartilhamento de informativos, eventos com confirmação de presença e interação por comentários. O layout foi pensado para adaptar-se a diferentes perfis de usuário, como estudantes e representantes.
+            </p>
+            <p>Tecnologias e ferramentas:</p>
+            <ul>
+                <li>Figma – prototipação completa de telas e definição do fluxo de navegação</li>
+                <li>React Native – desenvolvimento da interface para múltiplas plataformas (Android, iOS e Web)</li>
+                <li>JavaScript (ES6+) – lógica de componentes e navegação</li>
+                <li>React Navigation – estruturação de rotas entre as principais seções do app</li>
+                <li>StyleSheet – aplicação de estilos visuais alinhados à identidade estudantil</li>
+            </ul>
+            
+            <p>Acesse o código no GitHub:
+                <a href="https://github.com/beamonteiro19/Interdisciplinar" target="_blank" style="color: white">
+                    GitHub - App DA Fatec JD 
+                </a>
+            </p>
+        </div>
+
+
+        <div class="video">
+            <video controls>
+                <source src="../videos/video-appDA.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+    
+        </div>
+    
+    </div>
+
+</body>
+<script>
+    
+    function expandImage(img) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("expandedImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    }
+    
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+    </script>
+    
+</html>

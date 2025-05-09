@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Receitas Sazonais </title>
+    <link rel="stylesheet" href="projetos.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="topo">
+        <h1 style="font-family: 'Poppins', sans-serif; color: #4A4A4A;">Receitas Sazonais</h1>
+    </div>
+    
+
+    <div class="screenshots">
+        <img src="../imagens/r1.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r2.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r3.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r4.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r5.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r6.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r7.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r8.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r9.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r10.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r11.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r12.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r13.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r14.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/r15.jpg" alt="" onclick="expandImage(this)">
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
+    
+    <div class="conteudo">
+
+        <div class="descricaoR">
+            <h3>Receitas Sazonais</h3>
+            <p>
+                Desenvolvi um aplicativo de receitas temáticas com foco em estações do ano e feriados comemorativos, utilizando React Native. Atuei desde a concepção do layout até a implementação das funcionalidades principais. 
+                Organizei o conteúdo em categorias sazonais, com navegação intuitiva e visual atraente, usando imagens e cores temáticas para cada época. Criei componentes reutilizáveis para cards de receitas, com detalhamento individual de ingredientes e modo de preparo.
+            </p>
+            <p>Tecnologias e ferramentas:</p>
+            <ul>
+                <li>React Native – criação da interface multiplataforma (Android, iOS e Web)</li>
+                <li>JavaScript (ES6+) – controle da navegação, filtragem de dados e interatividade</li>
+                <li>React Navigation – gerenciamento de rotas entre telas e navegação entre seções</li>
+                <li>FlatList – renderização otimizada de listas de receitas</li>
+                <li>StyleSheet – aplicação de estilos temáticos para identidade visual sazonal</li>
+            </ul>
+            <p>Acesse o código no GitHub:
+                <a href="https://github.com/giu-briele/AppReceitasSazonais" target="_blank" style="color: #4A4A4A;">
+                    GitHub - App Cardapio 
+                </a>
+            </p>
+        </div>
+
+
+        <div class="video">
+            <video controls>
+                <source src="../videos/video-receitas.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+    
+        </div>
+    
+    </div>
+
+</body>
+<script>
+    
+    function expandImage(img) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("expandedImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    }
+    
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+    </script>
+    
+</html>

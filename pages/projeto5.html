@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Cardápio - Trattoria</title>
+    <link rel="stylesheet" href="projetos.css"> 
+</head>
+<body>
+
+    <div class="topo">
+        <img src="../imagens/logo-cardapio.png" alt="Logo Tratoria">
+    </div>
+    
+
+    <div class="screenshots">
+        <img src="../imagens/c1.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c2.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c3.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c4.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c5.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c6.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c7.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c8.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c9.jpg" alt="" onclick="expandImage(this)">
+        <img src="../imagens/c10.jpg" alt="" onclick="expandImage(this)">
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
+    
+    <div class="conteudo">
+
+        <div class="descricaoC">
+            <h3>Cardápio Digital</h3>
+            <p>
+                Desenvolvi um aplicativo de cardápio digital interativo utilizando React Native, atuando desde a prototipação até a entrega final. Estruturei o layout em seções organizadas, 
+                com exibição em grid responsivo (três itens por linha) e implementei um modal interativo para detalhamento de cada item selecionado. Utilizei componentes reutilizáveis para 
+                garantir escalabilidade e mantenibilidade do código.
+            </p>
+            <p>Tecnologias e ferramentas:</p>
+            <ul>
+                <li>React Native – desenvolvimento da interface mobile e navegação</li>
+                <li>JavaScript (ES6+) – lógica de estados e interações com o usuário</li>
+                <li>React Navigation – gerenciamento de rotas entre telas e navegação entre seções</li>
+                <li>Flexbox – estruturação em grade responsiva</li>
+                <li>StyleSheet – estilização customizada para manter a identidade visual</li>
+            </ul>
+            <p>Acesse o código no GitHub:
+                <a href="https://github.com/giu-briele/AppCardapio/tree/master/appcardapio" target="_blank" style="color: #1D4912;">
+                    GitHub - App Cardapio 
+                </a>
+            </p>
+        </div>
+
+
+        <div class="video">
+            <video controls>
+                <source src="../videos/video-cardapio.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+    
+        </div>
+    
+    </div>
+
+</body>
+<script>
+    
+    function expandImage(img) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("expandedImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    }
+    
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+    </script>
+    
+</html>
