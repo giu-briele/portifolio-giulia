@@ -158,7 +158,7 @@
         }
 
         /* Container App DA*/
-        .descricaoD {
+        .descricaoDA {
             width: 1000px;
             margin: 0;
             background-color: #5D17EB;
@@ -168,18 +168,18 @@
     
         }
 
-        .descricaoD h3 {
+        .descricaoDA h3 {
             margin-top: 0;
             color: #F3C04D;
         }
 
-        .descricaoD p {
+        .descricaoDA p {
             text-align: justify;
             line-height: 1.6;
             color: white;
         }
 
-        .descricaoD li {
+        .descricaoDA li {
             text-align: justify;
             line-height: 1.6;
             color: white;
