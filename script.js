@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Código para a rolagem suave
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
